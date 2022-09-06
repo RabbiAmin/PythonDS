@@ -104,3 +104,12 @@ plt.hist(v, bins=50, density=True) # matplotlib version (plot)
 # Compute the histogram with numpy and then plot it
 (n, bins) = np.histogram(v, bins=50, density=True)  # NumPy version (no plot)
 plt.plot(.5 * (bins[1:] + bins[:-1]), n) 
+
+
+import matplotlib.pyplot as plt2
+# plot a new histogram 
+count, bins, ignored = plt2.hist(v, 30, density=True)
+plt2.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) *
+               np.exp( - (bins - mu)**2 / (2 * sigma**2) ),
+         linewidth=2, color='r')
+plt2.show()
