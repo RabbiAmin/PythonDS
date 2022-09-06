@@ -66,7 +66,7 @@ a.min() # find the min numb of a
 a.max() # find the maximum number of a 
 
 
-#Mandelbrot set using matplotlib
+#Mandelbrot set using matplotlib ref, https://en.wikipedia.org/wiki/Mandelbrot_set
 import matplotlib.pyplot as plt
 
 def mandelbrot(h, w, maxit=20, r=2):
